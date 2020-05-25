@@ -13,7 +13,7 @@ const options = {
   plugins: [
     new CheckRely(),
     new ParseConfig({
-      filePath: path.resolve('.', 'config.md'),
+      filePath: path.resolve(__dirname, 'config.md'),
     }),
     // new ReadConfig(),
     new Cert(),
